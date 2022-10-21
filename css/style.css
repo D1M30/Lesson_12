@@ -1,0 +1,215 @@
+
+.wrapper{
+   overflow: hidden;
+   min-width: 100%;
+}
+
+.container{
+background-color: rgb(155, 188, 231);
+}
+
+.title{
+   padding: 15px;
+   font-size: 50px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   text-align: center;
+
+}
+
+.title__first {
+   display: inline-block;
+color: blue;
+transform: translate(33px,20px);
+
+}
+
+.title__second {
+   color: blueviolet;
+}
+
+.plane{
+background: url(../img/bg.jpeg);
+min-height: 700px;
+min-width: 700px;
+background-size: contain;
+padding-top: 40px; ;
+
+}
+
+.plane__pic{
+   background: url(../img/Airplane-Front-Red-icon.png);
+   width: 600px;
+   height: 600px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0 auto;
+   position: relative;
+   transform: rotate(0deg)  scale(0.2);
+  
+}
+
+.plane__pic:hover{
+   transform: rotate(45deg) scale(2.5);
+   transition: 5s;
+  
+}
+
+.plane__pic:hover .vint{
+   transform: rotate(14360deg);
+   transition: 5s;
+}
+
+.vint{
+position: absolute;
+width: 100px;
+height: 10px;
+top: 440px;
+position: relative;
+border: 2px solid;
+background-color: #fff;
+transform: rotate(45deg);
+}
+
+.vint::before{
+   content: "";
+   position:absolute ;
+   transform: rotate(90deg);
+   width: 100px;
+   height: 10px;
+   border: 2px solid;
+background-color: #fff;
+}
+
+.ditail__left {
+top: 340px;
+left: 129px;
+}
+
+.ditail__right{
+   top: 330px;
+   left: 370px;
+}
+
+
+.box{
+   width: 300px;
+   height: 300px;
+  background-color: rgb(22, 194, 119);
+   margin: 0 auto 30px;
+   position: relative;
+   overflow: hidden;
+}
+
+/* квадрат внутри */
+.box__subbox{
+   background-color: rgb(199, 49, 49);
+   width: 133px;
+   height: 133px;
+   left: 0;
+   position: absolute;
+   top: 22px;
+
+   transform: rotate(0deg);
+   
+}
+
+.box__subbox:hover{
+   top: 522px;
+   left: 290px;
+   transition: 5s;
+   transform: rotate(1220deg);
+}
+
+.item{
+   background-color: rgb(202, 134, 134);
+  margin-bottom: 40px;
+}
+
+.item__items{
+   line-height: 1.5;
+   font-size: 20px;
+   padding-left: 40px;
+   max-width: 400px;
+   
+}
+
+.item__items-link{
+   position: relative;
+}
+
+
+.item__items-link::before{
+   content: "";
+   position:absolute ;
+   background: url(../img/pngwing.com.png) 0 0 no-repeat;
+   width: 20px;
+   height: 20px;
+   background-size: cover;
+  left: -25px;
+  top: 5px;
+  transform: rotate(0deg);
+   
+}
+
+.item__items-link:hover::before{
+   transform: rotate(1110deg);
+   transition: 4s;
+}
+
+.block {
+   position: relative;
+   width: 300px;
+   height: 300px;
+   background-color: rgb(71, 88, 103);
+   margin: 0 auto 30px;
+}
+
+
+
+.block__pic{
+   position: absolute;
+background: url(../img/slip.jpg) no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+}
+
+.block__subblock {
+position: relative;
+   width: 300px;
+   height: 300px;
+   background-color: rgba(7, 113, 132, 0.977);
+   transform-origin: 0 0;
+}
+
+.block__subblock:hover{
+   position: absolute;
+   transform:rotate(90deg);
+   transition: 1s;
+}
+
+.matrix{
+  
+   perspective-origin: 0 0;
+   display: inline-block;
+   
+  
+}
+
+.matrix:hover{
+   perspective: 300px;
+   perspective-origin: 50% 50%;
+   width: 600px;
+   transition: 5s;
+}
+
+.matrix__pic{
+   
+   background: url(../img/matrix.gif) 0 0 no-repeat;
+   background-size:cover ;
+   width: 300px;
+   height: 300px;
+   transform:rotateX(50deg);
+  
+}
